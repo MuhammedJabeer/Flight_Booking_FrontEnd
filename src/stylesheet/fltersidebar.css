@@ -1,0 +1,23 @@
+.main-div{
+    margin-inline:300px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(2, 26, 43);
+    border-radius: 10px;
+        align-items: center;
+    display: flex
+;
+    justify-content: space-between;
+    
+}
+.contant{
+     display: flex; 
+     justify-content: space-between;
+}
+.info{
+     font-weight: bold;
+     color: white;
+}
+.filter{
+     display: flex;
+}
