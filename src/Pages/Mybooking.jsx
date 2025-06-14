@@ -1,8 +1,7 @@
 
 import MyBooking from "../Components/Mybooking"
-import Navbar from "../Components/NAv"
-import { useAuth } from "../Context/Authcontext"
-import { useEffect } from "react";
+import Navbar from "../Components/Nav"
+
 
 
 function MyBookingPage(){
