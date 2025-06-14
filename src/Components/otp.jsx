@@ -16,7 +16,7 @@ const Otp = () => {
      const handlesubmit=async(e)=>{
            e.preventDefault();
            try{
-               const res=await axios.post("http://localhost:3001/otp",{otp:otp,user_id:user_id}) 
+               const res=await axios.post("https://flight-booking-backend-6dx0.onrender.com/otp",{otp:otp,user_id:user_id}) 
                console.log("res",res);
                navigate("/login")
            }catch(error){

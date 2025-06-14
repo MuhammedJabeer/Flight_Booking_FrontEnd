@@ -16,7 +16,7 @@ const FlightCard = () => {
    const [flights, setFlights] = useState([]);
 
 useEffect(()=>{
-    fetch("http://localhost:3001/flight")
+    fetch("https://flight-booking-backend-6dx0.onrender.com/flight")
       .then((response) => response.json())
       .then((data) => {
          setFlights(data);

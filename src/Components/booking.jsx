@@ -34,7 +34,7 @@ const Booking = () => {
     const amounts = Flight.price * passengers.length;
 
     try {
-      const response = await axios.post("http://localhost:3001/create-order", {
+      const response = await axios.post("https://flight-booking-backend-6dx0.onrender.com/create-order", {
         amounts,
         flightId: Flight._id,
         user: user.id,
@@ -54,7 +54,7 @@ const Booking = () => {
           try{
               Swal.fire("Success", "Payment successful!", "success");
 
-              await axios.post("http://localhost:3001/booking",{
+              await axios.post("https://flight-booking-backend-6dx0.onrender.com/booking",{
                  totalAmount: Flight.price * passengers.length,
                  razorpayPaymentId: response.razorpay_payment_id,
                 razorpayOrderId: response.razorpay_order_id,

@@ -21,7 +21,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:3001/login", loginDetails);
+      const res = await axios.post("https://flight-booking-backend-6dx0.onrender.com/login", loginDetails);
 
       
       const { token } = res.data;

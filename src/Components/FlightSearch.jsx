@@ -20,7 +20,7 @@ const Home = () => {
       alert("Please fill all required fields");
       return;
     }
-      const res=await axios.post("http://localhost:3001/serach",{from,to})
+      const res=await axios.post("https://flight-booking-backend-6dx0.onrender.com/serach",{from,to})
       const flight =res.data.flight
       navigate("/Search",{state:{flight}})
     

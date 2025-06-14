@@ -26,7 +26,7 @@ const Signup=()=>{
      const handlesubmit=async(e)=>{
           e.preventDefault();
           try{
-             const res=await axios.post("http://localhost:3001/register",fromdata)
+             const res=await axios.post("https://flight-booking-backend-6dx0.onrender.com/register",fromdata)
               console.log(res.data);
               const user_id=res.data.user_id;
                navigate("/Verification",{state:{user_id}})

@@ -11,7 +11,7 @@ export default function MyBooking() {
   useEffect(() => {
     if(user && user.id){
          axios
-      .post("http://localhost:3001/Mybooking", { userId: user.id })
+      .post("https://flight-booking-backend-6dx0.onrender.com/Mybooking", { userId: user.id })
       .then((res) => {
         const bookings = res.data.bbooking;
         Setmybooking(bookings);
@@ -38,7 +38,7 @@ export default function MyBooking() {
     confirmButtonText: "Yes, cancel it!",
   }).then((result)=>{
     if(result.isConfirmed){
-       axios.post("http://localhost:3001/cancelbooking",{bookId:BookingId})
+       axios.post("https://flight-booking-backend-6dx0.onrender.com/cancelbooking",{bookId:BookingId})
         .then((res) => {
           Swal.fire("Cancelled!", "Your booking has been cancelled.", "success");
           Setmybooking((pre) => pre.filter((b) => b._id !== BookingId));
