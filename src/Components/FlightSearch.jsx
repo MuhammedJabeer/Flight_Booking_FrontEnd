@@ -35,18 +35,8 @@ const Home = () => {
       <div className="w-full max-w-5xl bg-white p-6 rounded-xl shadow-lg">
         {/* Travel Type */}
         <div className="flex space-x-4 mb-6">
-          <button
-            type="button"
-            className="px-4 py-2 bg-blue-600 text-white rounded-md font-semibold"
-          >
-            One Way
-          </button>
-          <button
-            type="button"
-            className="px-4 py-2 border rounded-md text-gray-600"
-          >
-            Round Trip
-          </button>
+          
+           <h1 className="text-2xl font-bold text-center m-5 text-black">Search Your Flight</h1> 
         </div>
 
         {/* Form starts here */}

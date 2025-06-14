@@ -4,7 +4,7 @@ import { useAuth } from "../Context/Authcontext";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const { isLoggedIn, logout,user } = useAuth();
+  const { isLoggedIn, logout,user,Setshow} = useAuth();
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -18,11 +18,11 @@ const Navbar = () => {
     }`;
 
   return (
-    <nav className="w-full bg-white border-gray-200 dark:bg-gray-900">
+    <nav className="w-full bg-white border-gray-200 dark:bg-gray-900 ">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
-            src="../public/logo.jpg"
+            src="../public/flogo.jpg"
             className="h-8"
             alt="Logo"
           />
@@ -86,11 +86,12 @@ const Navbar = () => {
                 Booking
               </NavLink>
             </li> */}
-            <li>
-              <NavLink to="/contact" end className={navLinkStyles}>
-                Contact
-              </NavLink>
-            </li>
+             {/* <li>
+               <NavLink to=#services end className={navLinkStyles}>
+                Services
+              </NavLink> 
+              
+            </li> */}
             {!isLoggedIn ? (
               <li>
                 <NavLink to="/login" end className={navLinkStyles}>
@@ -99,7 +100,7 @@ const Navbar = () => {
               </li>
             ) : (
               <li>
-                 <NavLink className="text-white" end>Welcome, {user.username || 'User'}</NavLink>
+                 <NavLink to='#' onClick={()=>Setshow(true)} className="text-white" end>Welcome, {user.username || 'User'}</NavLink>
                 <NavLink
                   onClick={logout}
                   className="text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white px-3 py-2 rounded-sm"
@@ -109,6 +110,7 @@ const Navbar = () => {
               </li>
               
             )}
+            
           
          </ul>
         </div>

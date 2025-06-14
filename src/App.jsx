@@ -9,6 +9,7 @@ import Otp from './Components/otp';
 import Search from './Pages/Search';
 import MyBookingPage from './Pages/Mybooking';
 import { AuthProvider } from './Context/Authcontext';
+import Profile from './Components/Profilemodal';
 
 
 
@@ -30,6 +31,7 @@ function App() {
           <Route path='/Search' element={<Search/>}/>
           <Route path='/Mybooking' element={<MyBookingPage/>}/>
           </Routes>
+           <Profile/>
           </AuthProvider>
         </Router>
       {/* <FlightSearch/> */}

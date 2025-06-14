@@ -9,6 +9,7 @@ export const AuthProvider = ({ children }) => {
   const [token, setToken] = useState(null);
   const [user,Setuser]=useState(null)
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [Show,Setshow]=useState(false)
   const Navigate=useNavigate()
 
   
@@ -57,7 +58,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   return (
-    <AuthContext.Provider value={{user, token, isLoggedIn, login, logout }}>
+    <AuthContext.Provider value={{user, token, isLoggedIn, login, logout ,Show,Setshow}}>
       {children}
     </AuthContext.Provider>
   );

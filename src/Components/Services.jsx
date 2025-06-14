@@ -6,7 +6,7 @@ const Services=()=>{
     return(
         <>
           
- <div className="p-8 bg-gray-100 min-h-screen">
+ <div id='services' className="p-8 bg-gray-100 min-h-screen">
       <h1 className="text-4xl font-bold text-center mb-10 text-blue-800">Top Travel Destinations</h1>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
