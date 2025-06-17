@@ -9,7 +9,7 @@
     align-items: center;
      background: linear-gradient(149.96deg, #0F0441 12.51%, #ff4208 89.53%); 
 
-    background: url(../public/flight1.gif),#000;
+    background: url(../flight1.gif),#000;
     background-position: center;
     background-size: cover;
     z-index: 1;
