@@ -11,7 +11,7 @@ const Services=()=>{
       
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
-          <img src="/taj.jpg" alt="Bali" className="w-full h-70 object-cover" />
+          <img src="../public/taj.jpg" alt="Bali" className="w-full h-70 object-cover" />
           <div className="p-4">
             <h2 className="font-bold text-lg text-gray-800">Agra </h2>
             <p className="text-sm text-gray-600">India</p>
@@ -19,7 +19,7 @@ const Services=()=>{
         </div>
 
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
-          <img src="/stunning.jpg" alt="Swiss Alps" className="w-full h-70 object-cover" />
+          <img src="../public/stunning.jpg" alt="Swiss Alps" className="w-full h-70 object-cover" />
           <div className="p-4">
             <h2 className="font-bold text-lg text-gray-800">Swiss Alps</h2>
             <p className="text-sm text-gray-600">Snowy Mountains</p>
@@ -27,7 +27,7 @@ const Services=()=>{
         </div>
 
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
-          <img src="/newyork.jpg" alt="New York" className="w-full h-70 object-cover" />
+          <img src="../public/newyork.jpg" alt="New York" className="w-full h-70 object-cover" />
           <div className="p-4">
             <h2 className="font-bold text-lg text-gray-800">New York City</h2>
             <p className="text-sm text-gray-600">Urban Adventure</p>
@@ -35,7 +35,7 @@ const Services=()=>{
         </div>
 
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
-          <img src="/paris.jpg" alt="Paris" className="w-full h-48 object-cover" />
+          <img src="../public/paris.jpg" alt="Paris" className="w-full h-48 object-cover" />
           <div className="p-4">
             <h2 className="font-bold text-lg text-gray-800">Paris, France</h2>
             <p className="text-sm text-gray-600">Romantic Escape</p>
@@ -43,7 +43,7 @@ const Services=()=>{
         </div>
 
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
-          <img src="/maldivs.jpg" alt="Maldives" className="w-full h-48 object-cover" />
+          <img src="../public/maldivs.jpg" alt="Maldives" className="w-full h-48 object-cover" />
           <div className="p-4">
             <h2 className="font-bold text-lg text-gray-800">Maldives</h2>
             <p className="text-sm text-gray-600">Luxury Retreat</p>
@@ -51,7 +51,7 @@ const Services=()=>{
         </div>
 
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
-          <img src="/tokyo.jpg" alt="Tokyo" className="w-full h-48 object-cover" />
+          <img src="../public/tokyo.jpg" alt="Tokyo" className="w-full h-48 object-cover" />
           <div className="p-4">
             <h2 className="font-bold text-lg text-gray-800">Tokyo, Japan</h2>
             <p className="text-sm text-gray-600">Cultural Fusion</p>
