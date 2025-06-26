@@ -5,7 +5,7 @@ import moment from "moment";
 import Swal from 'sweetalert2';
 
 export default function MyBooking() {
-  const [Mybooking, Setmybooking] = useState([]);
+  const [mybooking, setmybooking] = useState([]);
   const { user } = useAuth();
 
   useEffect(() => {
@@ -14,7 +14,7 @@ export default function MyBooking() {
       .post("https://flight-booking-backend-6dx0.onrender.com/Mybooking", { userId: user.id })
       .then((res) => {
         const bookings = res.data.bbooking;
-        Setmybooking(bookings);
+        setmybooking(bookings);
         console.log("Booking Data:", bookings);
       })
       .catch((err) => {
@@ -41,7 +41,7 @@ export default function MyBooking() {
        axios.post("https://flight-booking-backend-6dx0.onrender.com/cancelbooking",{bookId:BookingId})
         .then((res) => {
           Swal.fire("Cancelled!", "Your booking has been cancelled.", "success");
-          Setmybooking((pre) => pre.filter((b) => b._id !== BookingId));
+          setmybooking((pre) => pre.filter((b) => b._id !== BookingId));
         })
     }
   }).catch((error)=>{
@@ -53,7 +53,7 @@ export default function MyBooking() {
 
   return (
     <div className="max-w-md mx-auto mt-12 space-y-6 ">
-       {(!MyBooking||MyBooking.length===0) ?(
+       {(!mybooking||mybooking.length===0) ?(
              
            <div className="text-center space-y-4">
           <img
@@ -68,7 +68,7 @@ export default function MyBooking() {
 
 
 
-       ):( Mybooking.map((booking) => (
+       ):( mybooking.map((booking) => (
       
 
         
